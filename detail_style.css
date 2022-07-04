@@ -1,0 +1,382 @@
+    @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+    /* @IMPORT SERT À IMPORTER LA POLICE DE NOTRE CHOIX SUR LA PAGE CSS. */
+    /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////PAGE: ARTIST_DETAIL.PHP///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    .cucu {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50vh;
+        background: url(img/bébé1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        opacity: 0.9;
+        background-attachment: fixed;
+    }
+    
+    .cucudetail {
+        background: url(img/podium2.jpg);
+        background-size: cover;
+    }
+    /* 
+--La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément 
+(cf. les boîtes CSS). Elle synthétise padding-top, padding-right, padding-bottom, padding-left.
+-- Margin  La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler
+les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left.
+--La propriété CSS box-sizing définit la façon dont la hauteur et la largeur totale d'un élément est calculée.
+*/
+    /*
+-- BACKGROUND-IMAGE: URL("LIEN DE L'IMAGE"); :Sert à inserrer une image en fond de site grâce à son URL (lien), 
+--BACKGROUND-SIZE : Sert lui à appliquer l'image sur toute la page (Quand ça veut bien marcher :'D). 
+ */
+    /* 
+--FLUID-DISC APPARTIENT À LA PAGE: DISCS.PHP.
+*/
+    
+    .titre {
+        color: rgb(160, 19, 19);
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+    }
+    /* 
+--FONT-SIZE: La taille de mon titre.
+*/
+    
+    .titre h1 {
+        font-weight: 800;
+        font-family: 'Stardos Stencil';
+    }
+    /* 
+FONT-FAMILY: Sert à appliquer une police sur un titre ou sur un paragraphe.
+*/
+    
+    #fluid-detail {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .droite {
+        margin-right: 20%;
+    }
+    
+    .droite label {
+        color: white;
+        font-family: 'Stardos Stencil';
+        border-bottom: 2px solid white;
+        font-size: 22px;
+    }
+    
+    .gauche label {
+        color: white;
+        font-family: 'Stardos Stencil';
+        border-bottom: 2px solid white;
+        font-size: 22px;
+    }
+    
+    .droite input {
+        width: 200%;
+        background: transparent;
+        border: none;
+        margin-top: 8%;
+    }
+    
+    .droite input::placeholder {
+        color: white;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: 'Stardos Stencil';
+    }
+    
+    .gauche input::placeholder {
+        color: white;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: 'Stardos Stencil';
+    }
+    
+    .gauche input {
+        width: 200%;
+        height: auto;
+        background: transparent;
+        border: none;
+        margin-top: 8%;
+    }
+    
+    .boutons button {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Stardos Stencil';
+    }
+    
+    .picture label {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        font-family: 'Stardos Stencil';
+    }
+    
+    .picture img {
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 20%;
+        height: auto;
+    }
+    
+    .titre2 {
+        width: 20%;
+        height: auto;
+        margin-top: 2%;
+    }
+    
+    .titre2 label {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .boutons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////PAGE: DISCS.PHP///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    .title {
+        color: aliceblue;
+    }
+    
+    .bouton-detail a {
+        color: white;
+        font-family: 'Stardos Stencil';
+        background-color: rgb(0, 0, 0);
+        border: 2px solid black;
+    }
+    /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////PAGE: AJOUT_FORM.PHP/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    .form-group label {
+        color: rgb(0, 0, 0);
+        font-family: 'Stardos Stencil';
+        border-bottom: 2px solid white;
+        font-size: 22px;
+    }
+    
+    .form-group input {
+        width: 30%;
+        height: auto;
+        margin-top: 2%;
+    }
+    
+    /* .form-group ::placeholder {}
+    
+    #fluid-ajout {} */
+    
+    .artist {
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 18px;
+        font-family: 'Stardos Stencil';
+    }
+    /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////PAGE: CONNEXION_FORM.PHP/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.boxcomplete{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    top: 40px;
+    width: 400px;
+    height: 400px;
+    background: white;
+    transition: all 0.5s;
+    z-index: 2;
+    padding: 30px;
+    font-family: 'Stardos Stencil';
+  }
+  .btn-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .box input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  .box a {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .box h2 {
+    text-align: center;
+    margin:0;
+  }
+
+  .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+
+  .box:hover .inputconnect{
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box:hover, .box:hover ~ .background {
+    opacity: 1;
+    background: radial-gradient(circle, rgba(232,233,148,1) 0%, rgba(238,174,202,1) 100%);  
+    background: radial-gradient(circle, rgba(232,233,148,1) 0%, rgba(238,174,202,1) 100%);
+    transition: 1s ease-in-out;
+  }
+
+
+
+    /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////PAGE: INSCRIPTION_FORM.PHP/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.boxcomplete2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    width: 400px;
+    height: 650px;
+    background: white;
+    transition: all 0.5s;
+    z-index: 2;
+    padding: 30px;
+    font-family: 'Stardos Stencil';
+    margin: 0;
+  }
+ 
+  .box2 input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+
+  }
+
+  .box2:hover input{
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+  }
+
+  .box2 a {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .box2 h2 {
+    text-align: center;
+    margin:0;
+  }
+
+  .box2:hover {
+    color:#ffffff;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+
+  .background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box2:hover, .box2:hover ~ .background2 {
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(175,253,254,1) 7%, rgba(255,183,91,1) 27%, rgba(236,134,255,1) 59%, rgba(175,253,254,1) 83%);
+    background: linear-gradient(45deg, rgba(175,253,254,1) 7%, rgba(255,183,91,1) 27%, rgba(236,134,255,1) 59%, rgba(175,253,254,1) 83%);
+    transition: 1s ease-in-out;
+}
+
+.box2 input:focus ~ .background2{
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(175,253,254,1) 7%, rgba(255,183,91,1) 27%, rgba(236,134,255,1) 59%, rgba(175,253,254,1) 83%);
+    background: linear-gradient(45deg, rgba(175,253,254,1) 7%, rgba(255,183,91,1) 27%, rgba(236,134,255,1) 59%, rgba(175,253,254,1) 83%);
+}
+
+.btninscription{
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.box2:hover .btninscription{
+    background-color: rgb(255, 255, 255);
+    transition:0.5s ease-in-out;
+    color: black;
+    border: 1px solid black;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+    font-size: 1rem;
+
+}
+
